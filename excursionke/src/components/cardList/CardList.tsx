@@ -20,7 +20,7 @@ type Post = {
 const samplePosts: Post[] = [
   {
     _id: "1",
-    img: "/images/post1.jpg",
+    img: "/post1.jpg",
     createdAt: "2024-01-14T12:34:56Z",
     catSlug: "technology",
     slug: "post-1",
@@ -29,7 +29,7 @@ const samplePosts: Post[] = [
   },
   {
     _id: "2",
-    img: "/images/post2.jpg",
+    img: "/post2.jpg",
     createdAt: "2024-01-13T09:45:23Z",
     catSlug: "programming",
     slug: "post-2",
