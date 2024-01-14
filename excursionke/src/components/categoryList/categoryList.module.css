@@ -1,5 +1,3 @@
-.container {
-}
 
 .title {
   margin: 50px 0px;
@@ -18,7 +16,7 @@
   gap: 10px;
   text-transform: capitalize;
   width: 15%;
-  height: 80px;
+  height: 70px;
   justify-content: center;
   border-radius: 10px;
 }
@@ -53,17 +51,19 @@
 
 @media screen and (max-width: 1280px) {
   .category {
-    width: 20%;
+    width: 15%;
   }
 }
 @media screen and (max-width: 1024px) {
   .category {
-    width: 25%;
+    width: 15%;
+    height: 70px;
   }
 }
 @media screen and (max-width: 768px) {
   .category {
     width: 45%;
+    height: 60px;
   }
 }
 @media screen and (max-width: 640px) {
