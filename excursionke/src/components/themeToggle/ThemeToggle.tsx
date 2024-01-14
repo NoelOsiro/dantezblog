@@ -7,13 +7,13 @@ import { ThemeContext } from "@/context/ThemeContext";
 const ThemeToggle = () => {
   const context = useContext(ThemeContext);
   const { toggle, theme } = context || { toggle: () => {} };
-
+  
   return (
     <div
       className={styles.container}
       onClick={toggle}
       style={
-        context?.theme === "dark"
+        theme === "dark"
           ? { backgroundColor: "white" }
           : { backgroundColor: "#0f172a" }
       }
@@ -22,7 +22,7 @@ const ThemeToggle = () => {
       <div
         className={styles.ball}
         style={
-          context?.theme === "dark"
+          theme === "dark"
             ? { left: 1, background: "#0f172a" }
             : { right: 1, background: "white" }
         }
