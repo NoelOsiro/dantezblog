@@ -13,7 +13,16 @@
 
 .image {
   object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.image:hover {
+  transform: scale(1.05); /* Adjust the scale factor for bounce effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust the shadow on hover */
+}
+
 
 .textContainer {
   flex: 1;
@@ -43,8 +52,19 @@
   padding: 2px 0px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 786px) and (min-width: 320px) {
+  .container {
+    display: block;
+  }
   .imageContainer {
-    display: none;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .container {
+    display: block;
+  }
+  .imageContainer {
+    height: 240px;
   }
 }

@@ -20,7 +20,12 @@ const Card: React.FC<CardProps> = ({ key, item }) => {
     <div className={styles.container} key={key}>
       {item.img && (
         <div className={styles.imageContainer}>
-          <Image src={item.img} alt="" fill className={styles.image} />
+          <Image 
+            src={item.img} 
+            alt="" 
+            fill 
+            className={styles.image}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  />
         </div>
       )}
       <div className={styles.textContainer}>
