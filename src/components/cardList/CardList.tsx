@@ -46,7 +46,7 @@ const getData = async (page: number, cat?: string) => {
 };
 
 // CardList component
-const CardList: React.FC<{ page: number }> = ({ page }) => {
+const CardList: React.FC<{ page: number,cat?:string }> = ({ page, cat }) => {
   const [data, setData] = useState<{ posts: Post[]; count: number } | null>(
     null
   );

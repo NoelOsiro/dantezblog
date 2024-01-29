@@ -2,23 +2,26 @@ import React from "react";
 import styles from "./featured.module.css";
 import Image from "next/image";
 
-const Featured = () => {
+interface FeaturedProps {
+  title: string;
+  imageSrc: string;
+  postTitle: string;
+  postDesc: string;
+}
+const Featured: React.FC<FeaturedProps> = ({ title, imageSrc, postTitle, postDesc }) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b>Hey, Daniel Mogaka here!</b> Discover my stories and creative ideas.
+        <b>{title}</b> Discover my stories and creative ideas.
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="" fill className={styles.image} sizes="50vw" />
+          <Image src={imageSrc} alt="" fill className={styles.image} sizes="50vw" />
         </div>
         <div className={styles.textContainer}>
-          <h1 className={styles.postTitle}>Lorem ipsum dolor sit amet alim consectetur adipisicing elit.</h1>
+          <h1 className={styles.postTitle}>{postTitle}</h1>
           <p className={styles.postDesc}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate, quam nisi magni ea laborum inventore voluptatum
-            laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
-            quisquam! Harum unde sit culpa debitis.
+            {postDesc}
           </p>
           <button className={styles.button}>Read More</button>
         </div>

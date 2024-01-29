@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "next": "14.0.4",
+    "next-auth": "^4.24.5",
     "package.json": "^2.0.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-quill": "^2.0.0",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@types/node": "^20",
